@@ -13,10 +13,10 @@ public class PlayerController : MonoBehaviour
     float velocityY = 0.0f;
 
     private float actualWalkSpeedX, actualWalkSpeedZ;
-    private float walkSpeedZ = 80.0f;
-    private float runSpeedZ = 80.0f;
-    private float backWalkSpeedZ = 35f;
-    private float crouchSpeedZ = 30f;
+    private float walkSpeedZ = 10f;
+    private float runSpeedZ = 10f;
+    private float backWalkSpeedZ = 10f;
+    private float crouchSpeedZ = 10f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
     [Header("Axis Values")]

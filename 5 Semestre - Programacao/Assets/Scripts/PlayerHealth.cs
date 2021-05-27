@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : Health
 {
+    public GameObject loseScreen;
+
     protected void Start()
     {
         uiHealthBar = GameObject.FindGameObjectWithTag("PlayerHealthBar").GetComponent<Image>();
@@ -19,6 +21,12 @@ public class PlayerHealth : Health
         }
     }
 
-
+    protected override void Die()
+    {
+        Time.timeScale = 0;
+        loseScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
 }

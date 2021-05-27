@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
         //Update the character movements
         Vector3 velocity = (transform.forward * currentDir.y * actualWalkSpeedZ) + (transform.right * currentDir.x * actualWalkSpeedX) + Vector3.up * velocityY;
-        characterController.Move(velocity * Time.deltaTime);
+        characterController.Move(velocity * 5 * Time.deltaTime);
 
         //SetAnimators();
     }

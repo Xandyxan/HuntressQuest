@@ -36,7 +36,7 @@ public class Torreta : MonoBehaviour
                     Quaternion rotacao = Quaternion.FromToRotation(Vector3.up, spawn.forward);
                     GameObject clone = Instantiate(projetil, posicao, rotacao);
                     clone.GetComponent<Rigidbody>().AddForce(spawn.forward * 200);
-                    Destroy(clone, 2);
+                    Destroy(clone, 5);
                 }
             }
         }

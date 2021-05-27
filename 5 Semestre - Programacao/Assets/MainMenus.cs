@@ -11,6 +11,11 @@ public class MainMenus : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void LoadScene(int sceneNumber)
+    {
+        SceneManager.LoadScene(sceneNumber);
+    }
+
     public void ReplayGame()
     {
         Time.timeScale = 1f;
